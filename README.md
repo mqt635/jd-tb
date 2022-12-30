@@ -2,7 +2,7 @@
 
 ## 下载地址
 - https://wwwb.lanzouw.com/b02pys7pc
-- 见relelase
+- https://github.com/ashuang360/jd-tb/releases
 
 
 ## 特别申明
