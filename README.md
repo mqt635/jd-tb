@@ -1,6 +1,9 @@
-2022双十一，京东热爱穿行已上线。
+2023京东炸年兽活动已上线，为了方便小白用户，基于Autojs制作成APP
 
-cdn加速：https://fastly.jsdelivr.net/gh/ashuang360/jd-tb/jd.js
+## 下载地址
+- https://wwwb.lanzouw.com/b02pys7pc
+- 见relelase
+
 
 ## 特别申明
 
