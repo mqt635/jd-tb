@@ -13,58 +13,7 @@ if (!auto.service) {
     exit()
 }
 console.show()
-function getSetting() {
-    let indices = []
-    autoOpen && indices.push(0)
-    autoMute && indices.push(1)
-    autoJoin && indices.push(2)
-    indices.push(3)
- 
-    let settings = dialogs.multiChoice('任务设置', ['自动打开京东进入活动。多开或任务列表无法自动打开时取消勾选', '自动调整媒体音量为0。以免直播任务发出声音，首次选择需要修改系统设置权限', '自动完成入会任务。京东将授权手机号给商家，日后可能会收到推广短信', '此选项用于保证选择的处理，勿动！'], indices)
- 
-    if (settings.length == 0) {
-        toast('取消选择，任务停止')
-        exit()
-    }
- 
-    if (settings.indexOf(0) != -1) {
-        storage.put('autoOpen', true)
-        autoOpen = true
-    } else {
-        storage.put('autoOpen', false)
-        autoOpen = false
-    }
-    if (settings.indexOf(1) != -1) {
-        storage.put('autoMute', true)
-        autoMute = true
-    } else {
-        storage.put('autoMute', false)
-        autoMute = false
-    }
-    if (settings.indexOf(2) != -1) {
-        storage.put('autoJoin', true)
-        autoJoin = true
-    } else {
-        storage.put('autoJoin', false)
-        autoJoin = false
-    }
-}
- 
-let storage = storages.create("jd_task");
-let autoOpen = storage.get('autoOpen', true)
-let autoMute = storage.get('autoMute', true)
-let autoJoin = storage.get('autoJoin', true)
-getSetting()
- 
-if (autoMute) {
-    try {
-        device.setMusicVolume(0)
-        toast('成功设置媒体音量为0')
-    } catch (err) {
-        alert('首先需要开启权限，请开启后再次运行脚本')
-        exit()
-    }
-}
+
  
 console.log('开始完成京东任务...')
 console.log('按音量下键停止')
@@ -117,10 +66,7 @@ function openAndInto() {
     sleep(2000)
     console.log('进入活动页面')
  
-    app.startActivity({
-        action: "VIEW",
-        data: 'openApp.jdMobile://virtual?params={"category":"jump","action":"to","des":"m","sourceValue":"JSHOP_SOURCE_VALUE","sourceType":"JSHOP_SOURCE_TYPE","url":"https://u.jd.com/kIrrQ3H","M_sourceFrom":"mxz","msf_type":"auto"}'
-    })
+    launch("com.jingdong.app.mall")
 }
  
 // 获取金币数量
