@@ -1,9 +1,10 @@
-2023京东炸年兽活动已上线，为了方便小白用户，基于Autojs制作成APP
+2023.618脚本已更新。
 
-## 下载地址
+## 成品软件下载地址
 - https://wwwb.lanzouw.com/b02pys7pc
-- https://github.com/ashuang360/jd-tb/releases
 
+## 源码使用说明
+下载并导入main.js到Autojs软件中即可使用。
 
 ## 特别申明
 
