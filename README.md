@@ -1,10 +1,18 @@
+<img src="static/logo.png" width="100" />
+
 2023.618脚本已更新。
 
-## 成品软件下载地址
+## 软件下载
 - https://wwwb.lanzouw.com/b02pys7pc
 
-## 源码使用说明
-下载并导入main.js到Autojs软件中即可使用。
+
+## 运行效果
+<div style="display:flex">
+  <img src="static/1.jpg" width="23%"/>
+  <img src="static/2.jpg" width="23%"/>
+  <img src="static/3..jpg" width="23%"/>
+  <img src="static/4..jpg" width="23%"/>
+</div>
 
 ## 特别申明
 
