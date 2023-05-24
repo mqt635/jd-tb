@@ -3,7 +3,7 @@
 2023.618脚本已更新。
 
 ## 软件下载
-- https://wwwb.lanzouw.com/b02pys7pc
+https://wwwb.lanzouw.com/b02pys7pc
 
 
 ## 运行效果
