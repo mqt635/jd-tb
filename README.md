@@ -5,6 +5,7 @@
 ## 软件下载
 https://wwwb.lanzouw.com/b02pys7pc
 
+长期更新，请点个star保持关注。
 
 ## 运行效果
 <div style="display:flex">
